@@ -30,7 +30,7 @@ with st.sidebar:
     st.markdown("[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/your-repo/your-project)")
 
 # Main app
-st.title("💬 Chatbot with Context")
+st.title("💬 You Personal AI Scraper")
 
 # Input for website URL
 website_url = st.text_input("Enter a website URL to scrape for context")
@@ -65,7 +65,7 @@ if st.button('Send'):
                     messages=st.session_state['messages']
                 )
                 chat_response = response.choices[0].message['content']
-                st.session_state['messages'].append({"role": "assistant", "content": chat_response})
+                st.session_state['messages'].append({"role": "assistant", "content": scraped_content})
                 st.write(chat_response)
             except Exception as e:
                 st.error(f"Failed to call OpenAI API: {e}")
