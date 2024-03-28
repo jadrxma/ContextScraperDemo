@@ -29,7 +29,7 @@ if 'website_content' not in st.session_state:
 
 # Sidebar for API key input
 with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+    openai_api_key = st.text_input("OpenAI API Key (GPT4)", key="chatbot_api_key", type="password")
     st.markdown("[Get an OpenAI API Key](https://platform.openai.com/account/api-keys)")
   
 
