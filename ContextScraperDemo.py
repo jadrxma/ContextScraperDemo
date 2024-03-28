@@ -53,7 +53,7 @@ if st.button('Collect Data'):
         st.error("Please enter a website URL.")
 
 # Chat input
-user_input = st.text_input("What Would You Like Me To Analyze?")
+user_input = st.text_input("What Would You Like Me To Find For You?")
 
 # Send button for chat
 # Chat input and 'Send' button interaction
