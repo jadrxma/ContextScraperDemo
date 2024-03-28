@@ -34,10 +34,10 @@ with st.sidebar:
   
 
 # Main app
-st.title("💬 Your Personal AI Scraper")
+st.title("💬 Your community chat")
 
 # Input for website URL
-website_url = st.text_input("Enter a website URL to scrape for context")
+website_url = st.text_input("Add item")
 
 # Button to scrape website
 if st.button('Scrape Website'):
