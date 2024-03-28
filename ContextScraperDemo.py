@@ -34,15 +34,15 @@ with st.sidebar:
   
 
 # Main app
-st.title("💬 Your community chat")
+st.title("💬 Your Community Chat")
 
 # Input for website URL
 website_url = st.text_input("Add item")
 
 # Button to scrape website
-if st.button('Scrape Website'):
+if st.button('Collect Data'):
     if website_url:
-        with st.spinner('Scraping website...'):
+        with st.spinner('Collecting Data...'):
             scraped_content = scrape_website(website_url)
             if scraped_content:
                 st.session_state['website_content'] = scraped_content  # Store scraped content
